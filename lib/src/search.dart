@@ -89,6 +89,7 @@ class SearchPage<T> extends SearchDelegate<T> {
         duration: Duration(milliseconds: 200),
         curve: Curves.easeInOutCubic,
         child: IconButton(
+           color: Color(0xffFCD088),
           icon: Icon(Icons.clear),
           onPressed: () => query = '',
         ),
@@ -102,6 +103,7 @@ class SearchPage<T> extends SearchDelegate<T> {
     // It's aware of targeted platform.
     // Used to close the view.
     return IconButton(
+      color:  Color(0xffFCD088),
       icon: const BackButtonIcon(),
       onPressed: () => close(context, null),
     );
